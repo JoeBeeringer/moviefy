@@ -377,7 +377,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1151" y="-1296"/>
+            <point key="canvasLocation" x="792" y="-872"/>
         </scene>
         <!--Wishlist View Controller - Wishlist-->
         <scene sceneID="Jjx-CJ-NYs">
@@ -632,7 +632,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="Wqu-0y-0Cp" kind="push" identifier="showDetail" id="vpl-ck-Stb"/>
+                                    <segue destination="Wqu-0y-0Cp" kind="push" identifier="showDetail" id="2MJ-zS-Agm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -703,7 +703,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5pQ-Jn-Ry2"/>
         <segue reference="ICy-pb-vqD"/>
+        <segue reference="5pQ-Jn-Ry2"/>
     </inferredMetricsTieBreakers>
 </document>

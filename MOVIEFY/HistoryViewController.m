@@ -133,32 +133,30 @@
 }
 
 
-/*
+
  // Override to support rearranging the table view.
  - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
  {
  }
- */
 
-/*
+
  // Override to support conditional rearranging of the table view.
  - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
  {
  // Return NO if you do not want the item to be re-orderable.
  return YES;
  }
- */
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"select");
-	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         NSLog(@"select2");
-		
-        NSDate *object = [_data objectAtIndex:indexPath.row];
-    	self.detaiViewController.detailItem = object;
+		[self performSegueWithIdentifier:@"showDetail" sender:self];
+     // NSDate *object = [_data objectAtIndex:indexPath.row];
+    	//self.detailViewController.detailItem = object;
         
 	}
 }

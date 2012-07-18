@@ -15,7 +15,7 @@
 - (void) loadData;
 - (void) saveData;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
-@property (strong, nonatomic) DetailViewController *detaiViewController;
+@property (strong, nonatomic) DetailViewController *detailViewController;
 - (IBAction)sortMethod:(id)sender;
 
 @end

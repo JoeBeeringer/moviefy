@@ -278,22 +278,8 @@ int senderTag = 0;
     tempListMultiArray = [NSMutableArray arrayWithContentsOfFile:[NSString stringWithFormat:@"%@/Documents/HistoryList", NSHomeDirectory()]];
     NSArray *components;
     int count = [tempListMultiArray count];
-    
-    NSMutableArray *temp;
-    int i = 0;
-    while (i<3) {
-        NSLog(@"in der while");
-        components = [ [tempListMultiArray objectAtIndex:i] componentsSeparatedByString:@"(("];
-        NSString *tempstring = [components objectAtIndex:0];
-        [temp insertObject:tempstring atIndex:0];
-        i++;
-    }
-   
-    
-  //  NSLog(@"stelle 0 %@",[NSString stringWithFormat:[temp objectAtIndex:0]]);
        
-    //[components insertObject:[[tempListMultiArray objectAtIndex:0] componentsSeparatedByString:@"(("] atIndex:i];
-     
+      
     //film wird nur dann geaddet, falls er nicht default ist 
     if ([titleOut.text isEqualToString: @"Enter movie.."]){
         UIAlertView *discard = [[UIAlertView alloc] initWithTitle:@"Enter Movie" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
@@ -304,7 +290,7 @@ int senderTag = 0;
     {
        // zerteilt string so das nur noch titel in object 0 steht
         
-        if ([temp containsObject:titleOut.text]){
+        if ([tempListMultiArray containsObject:titleOut.text]){
             NSLog(@"in der text abfrage");
             //verhindert doppelpost
              UIAlertView *discard = [[UIAlertView alloc] initWithTitle:@"Movie is allready in Database" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
